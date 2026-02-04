@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* TOPO */
+.topo {
+  background-color: #2f2a26;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.topo p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+/* BOTÃO WHATS */
+.btn-whats {
+  background-color: #25d366;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* CATÁLOGO */
+.catalogo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.lista-cadeiras {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cadeira {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cadeira img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cadeira h3 {
+  margin: 15px 0 5px;
+}
+
+.cadeira button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* REFORMA */
+.reforma {
+  background-color: #e0e0e0;
+  padding: 40px 20px;
+  text-align: center;
+}
