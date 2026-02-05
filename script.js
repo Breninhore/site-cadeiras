@@ -7,8 +7,9 @@ function chamarWhats(produto) {
     "Pode me passar mais detalhes, prazo de produção e formas de pagamento?";
 
   const link =
-    "https://wa.me/qr/SUATKCB6RFNZJ1" + numero + "?text=" + encodeURIComponent(mensagem);
+    "https://wa.me/55 21 99852-2302" + numero + "?text=" + encodeURIComponent(mensagem);
 
   window.open(link, "_blank");
 }
+
 
