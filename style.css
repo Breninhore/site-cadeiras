@@ -148,6 +148,44 @@ body {
   }
 }
 
+/* BLOCO DE VALOR */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: #0f0f0f;
+}
+
+.intro h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* BOTÃO INTRO */
+.btn-intro {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #25d366;
+  color: #25d366;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-intro:hover {
+  background: #25d366;
+  color: #111;
+}
+
+
 
 
 
