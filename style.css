@@ -174,3 +174,58 @@ img {
   box-shadow: 0 12px 30px rgba(37, 211, 102, 0.9);
 }
 
+/* BOTÃO FLUTUANTE WHATS DARK */
+.whats-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #111;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  z-index: 999;
+  animation: pulse 2s infinite;
+}
+
+.whats-float img {
+  width: 26px;
+  height: 26px;
+}
+
+.whats-float span {
+  white-space: nowrap;
+}
+
+/* ANIMAÇÃO */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .whats-float span {
+    display: none;
+  }
+
+  .whats-float {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}
