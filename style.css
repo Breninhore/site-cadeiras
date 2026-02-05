@@ -83,10 +83,9 @@ body {
 .cadeira img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
+  background-color: #111;
 }
-
 .cadeira h3 {
   margin: 18px 0 6px;
   font-size: 20px;
@@ -149,5 +148,6 @@ img {
     width: 95%;
   }
 }
+
 
 
