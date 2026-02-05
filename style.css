@@ -83,3 +83,23 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cadeira img {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .topo h1 {
+    font-size: 26px;
+  }
+
+  .cadeira {
+    width: 95%;
+  }
+}
