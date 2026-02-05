@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadeiras Do indio | Venda e Reforma</title>
+  <title>Cadeiras do Índio | Venda e Reforma</title>
 
-  <!-- Isso conecta o HTML com o CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- TOPO DO SITE -->
+  <!-- TOPO -->
   <header class="topo">
-    <h1>Cadeiras Do indio</h1>
-    <p>Venda • Reforma • Forração</p>
-
-    <a class="btn-whats" href="https://wa.me/qr/SUATKCB6RFNZJ1" target="_blank">
-      Fale conosco no WhatsApp
-    </a>
+    <h1>Cadeiras do Índio</h1>
+    <p>Venda • Reforma • Forração artesanal</p>
   </header>
 
   <!-- CATÁLOGO -->
@@ -28,63 +23,39 @@
 
       <div class="cadeira">
         <img src="conjunto-quatro-cadeiras.jpg" alt="Conjunto de cadeiras artesanais">
-        <h3>Conjunto de cadeiras artesanais</h3>
+        <h3>Conjunto de Cadeiras</h3>
         <p>A partir de R$ 500</p>
         <button onclick="chamarWhats('Conjunto de cadeiras artesanais')">
-          Quero essa no WhatsApp
+          Quero essa
         </button>
       </div>
 
       <div class="cadeira">
         <img src="espreguicadeira-piscina-1.jpg" alt="Espreguiçadeira para piscina">
-        <h3>Espreguiçadeira para piscina</h3>
+        <h3>Espreguiçadeira</h3>
         <p>A partir de R$ 450</p>
         <button onclick="chamarWhats('Espreguiçadeira para piscina')">
-          Quero essa no WhatsApp
+          Quero essa
         </button>
       </div>
 
     </div>
   </section>
 
-  <!-- CONECTA O JAVASCRIPT -->
-  <script src="script.js"></script>
-
+  <!-- BOTÃO WHATSAPP FLUTUANTE (ÚNICO) -->
   <a
-  href="https://wa.me/5521991697363"
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Chamar no WhatsApp"
->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-  />
-</a>
+    href="https://wa.me/5521991697363?text=Olá!%20👋%20Vim%20pelo%20site%20*Cadeiras%20do%20Índio*.%0A%0AGostaria%20de%20comprar%20ou%20reformar%20uma%20cadeira.%20Pode%20me%20passar%20valores,%20prazo%20e%20detalhes?"
+    class="whats-float"
+    target="_blank"
+    aria-label="Falar no WhatsApp"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    />
+    <span>Fale direto com o artesão</span>
+  </a>
 
-<a
-  href="https://wa.me/5521991697363?text=Ol%C3%A1!%20👋%20Vim%20pelo%20site%20*Cadeiras%20do%20%C3%8Dndio*.%0A%0AGostaria%20de%20fazer%20*reforma%20ou%20forra%C3%A7%C3%A3o*%20em%20uma%20cadeira.%0APode%20me%20explicar%20como%20funciona%20o%20processo,%20valores%20e%20prazo?"
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Chamar no WhatsApp"
->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-  />
-</a>
-
-<a
-  href="https://wa.me/5521991697363?text=Olá!%20Vim%20pelo%20site%20*Cadeiras%20do%20Índio*%20e%20quero%20reformar%20minha%20cadeira."
-  class="whats-float"
-  target="_blank"
->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-  />
-  <span>Fale direto com o artesão</span>
-</a>
-
+  <script src="script.js"></script>
 </body>
 </html>
