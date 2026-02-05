@@ -4,60 +4,84 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #111;
-  color: #eaeaea;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
 }
 
 /* TOPO */
 .topo {
-  background: linear-gradient(135deg, #1b1b1b, #000);
+  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .topo h1 {
   margin: 0;
-  font-size: 36px;
-  letter-spacing: 1px;
+  font-size: 42px;
+  letter-spacing: 2px;
 }
 
 .topo p {
-  margin-top: 10px;
-  color: #b5b5b5;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #bbb;
+}
+
+/* BOTÃO TOPO */
+.btn-whats {
+  display: inline-block;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #111;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-whats:hover {
+  transform: scale(1.05);
 }
 
 /* CATÁLOGO */
 .catalogo {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 .lista-cadeiras {
   display: flex;
-  gap: 25px;
   justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .cadeira {
-  background: #1c1c1c;
+  background: #161616;
   width: 280px;
   padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-  transition: transform 0.3s;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
 }
 
 .cadeira:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .cadeira img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .cadeira h3 {
@@ -69,32 +93,32 @@ body {
 }
 
 .cadeira button {
-  margin-top: 12px;
-  width: 100%;
-  padding: 12px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #111;
   border: none;
-  border-radius: 6px;
-  background: #25d366;
-  color: #000;
+  padding: 12px;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* WHATS FLUTUANTE */
+/* BOTÃO FLUTUANTE */
 .whats-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #000;
+  background: #111;
   color: #fff;
-  padding: 14px 18px;
+  padding: 12px 18px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 0 25px rgba(37, 211, 102, 0.7);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
   z-index: 999;
   animation: pulse 2s infinite;
 }
@@ -110,13 +134,16 @@ body {
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
-  .whats-float span {
-    display: none;
+@media (max-width: 768px) {
+  .topo h1 {
+    font-size: 28px;
   }
 
-  .whats-float {
-    padding: 16px;
-    border-radius: 50%;
+  .cadeira {
+    width: 95%;
+  }
+
+  .whats-float span {
+    display: none;
   }
 }
