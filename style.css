@@ -35,6 +35,7 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  display: inline-block;
 }
 
 /* CATÁLOGO */
@@ -50,15 +51,25 @@ body {
   flex-wrap: wrap;
 }
 
+/* CARD DA CADEIRA */
 .cadeira {
   background: white;
   width: 280px;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadeira:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .cadeira img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -66,15 +77,26 @@ body {
   margin: 15px 0 5px;
 }
 
+.cadeira p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* BOTÃO CARD */
 .cadeira button {
   background-color: #25d366;
   color: white;
   border: none;
   padding: 12px;
-  margin-top: 10px;
+  margin-top: 12px;
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 15px;
+}
+
+.cadeira button:hover {
+  background-color: #1ebe5d;
 }
 
 /* REFORMA */
@@ -84,19 +106,20 @@ body {
   text-align: center;
 }
 
+/* IMAGENS GERAL */
 img {
   max-width: 100%;
   height: auto;
 }
 
-.cadeira img {
-  height: 220px;
-  object-fit: cover;
-}
-
+/* RESPONSIVO */
 @media (max-width: 768px) {
   .topo h1 {
     font-size: 26px;
+  }
+
+  .topo p {
+    font-size: 16px;
   }
 
   .cadeira {
