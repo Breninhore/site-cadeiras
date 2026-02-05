@@ -5,105 +5,128 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  background-color: #121212;
+  color: #eaeaea;
 }
 
 /* TOPO */
 .topo {
-  background-color: #2f2a26;
+  background: linear-gradient(135deg, #1f1b18, #2f2a26);
   color: #fff;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .topo h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 38px;
+  letter-spacing: 1px;
 }
 
 .topo p {
-  margin: 10px 0 20px;
+  margin: 12px 0 25px;
   font-size: 18px;
+  opacity: 0.9;
 }
 
 /* BOTÃO WHATS */
 .btn-whats {
   background-color: #25d366;
-  color: white;
-  padding: 14px 25px;
+  color: #0b3d1c;
+  padding: 15px 28px;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
   display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whats:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(37,211,102,0.4);
 }
 
 /* CATÁLOGO */
 .catalogo {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
+.catalogo h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* LISTA */
 .lista-cadeiras {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
-/* CARD DA CADEIRA */
+/* CARD */
 .cadeira {
-  background: white;
+  background: #1e1e1e;
   width: 280px;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cadeira:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
 }
 
 .cadeira img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .cadeira h3 {
-  margin: 15px 0 5px;
+  margin: 18px 0 6px;
+  font-size: 20px;
 }
 
 .cadeira p {
   margin: 0;
+  color: #9be7b0;
   font-weight: bold;
 }
 
 /* BOTÃO CARD */
 .cadeira button {
   background-color: #25d366;
-  color: white;
+  color: #0b3d1c;
   border: none;
-  padding: 12px;
-  margin-top: 12px;
+  padding: 13px;
+  margin-top: 14px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 15px;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .cadeira button:hover {
   background-color: #1ebe5d;
+  transform: scale(1.03);
 }
 
 /* REFORMA */
 .reforma {
-  background-color: #e0e0e0;
-  padding: 40px 20px;
+  background: #181818;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.reforma h2 {
+  margin-bottom: 10px;
 }
 
 /* IMAGENS GERAL */
@@ -115,7 +138,7 @@ img {
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .topo h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .topo p {
