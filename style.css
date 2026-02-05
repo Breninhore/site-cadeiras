@@ -4,60 +4,59 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #121212;
-  color: #eaeaea;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
 }
 
 /* TOPO */
 .topo {
-  background: linear-gradient(135deg, #1f1b18, #2f2a26);
-  color: #fff;
+  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .topo h1 {
   margin: 0;
-  font-size: 38px;
-  letter-spacing: 1px;
+  font-size: 42px;
+  letter-spacing: 2px;
 }
 
 .topo p {
-  margin: 12px 0 25px;
+  margin-top: 12px;
   font-size: 18px;
-  opacity: 0.9;
+  color: #bbb;
 }
 
-/* BOTÃO WHATS */
+/* BOTÃO TOPO */
 .btn-whats {
-  background-color: #25d366;
-  color: #0b3d1c;
-  padding: 15px 28px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
   display: inline-block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #111;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .btn-whats:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(37,211,102,0.4);
 }
 
 /* CATÁLOGO */
 .catalogo {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .catalogo h2 {
-  margin-bottom: 30px;
   font-size: 28px;
+  margin-bottom: 40px;
 }
 
-/* LISTA */
 .lista-cadeiras {
   display: flex;
   justify-content: center;
@@ -65,19 +64,17 @@ body {
   flex-wrap: wrap;
 }
 
-/* CARD */
 .cadeira {
-  background: #1e1e1e;
+  background: #161616;
   width: 280px;
   padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  transition: 0.3s;
 }
 
 .cadeira:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
 }
 
 .cadeira img {
@@ -86,68 +83,71 @@ body {
   object-fit: contain;
   background-color: #111;
 }
+
 .cadeira h3 {
-  margin: 18px 0 6px;
-  font-size: 20px;
+  margin: 15px 0 5px;
 }
 
 .cadeira p {
-  margin: 0;
-  color: #9be7b0;
-  font-weight: bold;
+  color: #ccc;
 }
 
-/* BOTÃO CARD */
 .cadeira button {
-  background-color: #25d366;
-  color: #0b3d1c;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #111;
   border: none;
-  padding: 13px;
-  margin-top: 14px;
+  padding: 12px;
+  margin-top: 15px;
   width: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
+  border-radius: 25px;
   font-weight: bold;
-  transition: background 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
-.cadeira button:hover {
-  background-color: #1ebe5d;
-  transform: scale(1.03);
+/* BOTÃO FLUTUANTE */
+.whats-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #111;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  z-index: 999;
+  animation: pulse 2s infinite;
 }
 
-/* REFORMA */
-.reforma {
-  background: #181818;
-  padding: 50px 20px;
-  text-align: center;
+.whats-float img {
+  width: 26px;
 }
 
-.reforma h2 {
-  margin-bottom: 10px;
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
-/* IMAGENS GERAL */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* RESPONSIVO */
+/* MOBILE */
 @media (max-width: 768px) {
   .topo h1 {
     font-size: 28px;
   }
 
-  .topo p {
-    font-size: 16px;
-  }
-
   .cadeira {
     width: 95%;
   }
+
+  .whats-float span {
+    display: none;
+  }
 }
+
 
 
 
